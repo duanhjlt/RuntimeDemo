@@ -17,6 +17,9 @@
 		11DED60B1C97F4C900CC7F11 /* RuntimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DED60A1C97F4C900CC7F11 /* RuntimeDemoUITests.m */; };
 		11DED61B1C97F51300CC7F11 /* ADClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DED61A1C97F51300CC7F11 /* ADClass.m */; };
 		11DED61F1C97F5D900CC7F11 /* ADIvarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DED61E1C97F5D900CC7F11 /* ADIvarModel.m */; };
+		11DED6231C97FD4100CC7F11 /* ADPropertyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DED6221C97FD4100CC7F11 /* ADPropertyDemo.m */; };
+		11DED6261C9806A400CC7F11 /* UIControl+ADBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DED6251C9806A400CC7F11 /* UIControl+ADBlock.m */; };
+		11DED62A1C980A8900CC7F11 /* NSObject+FastJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DED6291C980A8900CC7F11 /* NSObject+FastJSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		11DED61A1C97F51300CC7F11 /* ADClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADClass.m; path = Catagory/ADClass.m; sourceTree = "<group>"; };
 		11DED61D1C97F5D900CC7F11 /* ADIvarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADIvarModel.h; path = Ivar/ADIvarModel.h; sourceTree = "<group>"; };
 		11DED61E1C97F5D900CC7F11 /* ADIvarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADIvarModel.m; path = Ivar/ADIvarModel.m; sourceTree = "<group>"; };
+		11DED6211C97FD4100CC7F11 /* ADPropertyDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADPropertyDemo.h; path = Property/ADPropertyDemo.h; sourceTree = "<group>"; };
+		11DED6221C97FD4100CC7F11 /* ADPropertyDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADPropertyDemo.m; path = Property/ADPropertyDemo.m; sourceTree = "<group>"; };
+		11DED6241C9806A400CC7F11 /* UIControl+ADBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+ADBlock.h"; path = "Catagory/UIControl+ADBlock.h"; sourceTree = "<group>"; };
+		11DED6251C9806A400CC7F11 /* UIControl+ADBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ADBlock.m"; path = "Catagory/UIControl+ADBlock.m"; sourceTree = "<group>"; };
+		11DED6281C980A8900CC7F11 /* NSObject+FastJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+FastJSON.h"; path = "FastJSON/NSObject+FastJSON.h"; sourceTree = "<group>"; };
+		11DED6291C980A8900CC7F11 /* NSObject+FastJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FastJSON.m"; path = "FastJSON/NSObject+FastJSON.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,8 @@
 		11DED5E41C97F4C900CC7F11 /* RuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11DED6271C980A5B00CC7F11 /* FastJSON */,
+				11DED6201C97FD1C00CC7F11 /* Property */,
 				11DED61C1C97F59D00CC7F11 /* Ivar */,
 				11DED6181C97F4E100CC7F11 /* Catagory */,
 				11DED5E81C97F4C900CC7F11 /* AppDelegate.h */,
@@ -153,6 +164,8 @@
 			children = (
 				11DED6191C97F51300CC7F11 /* ADClass.h */,
 				11DED61A1C97F51300CC7F11 /* ADClass.m */,
+				11DED6241C9806A400CC7F11 /* UIControl+ADBlock.h */,
+				11DED6251C9806A400CC7F11 /* UIControl+ADBlock.m */,
 			);
 			name = Catagory;
 			sourceTree = "<group>";
@@ -164,6 +177,24 @@
 				11DED61E1C97F5D900CC7F11 /* ADIvarModel.m */,
 			);
 			name = Ivar;
+			sourceTree = "<group>";
+		};
+		11DED6201C97FD1C00CC7F11 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				11DED6211C97FD4100CC7F11 /* ADPropertyDemo.h */,
+				11DED6221C97FD4100CC7F11 /* ADPropertyDemo.m */,
+			);
+			name = Property;
+			sourceTree = "<group>";
+		};
+		11DED6271C980A5B00CC7F11 /* FastJSON */ = {
+			isa = PBXGroup;
+			children = (
+				11DED6281C980A8900CC7F11 /* NSObject+FastJSON.h */,
+				11DED6291C980A8900CC7F11 /* NSObject+FastJSON.m */,
+			);
+			name = FastJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DED6231C97FD4100CC7F11 /* ADPropertyDemo.m in Sources */,
+				11DED62A1C980A8900CC7F11 /* NSObject+FastJSON.m in Sources */,
+				11DED6261C9806A400CC7F11 /* UIControl+ADBlock.m in Sources */,
 				11DED5ED1C97F4C900CC7F11 /* ViewController.m in Sources */,
 				11DED61F1C97F5D900CC7F11 /* ADIvarModel.m in Sources */,
 				11DED5EA1C97F4C900CC7F11 /* AppDelegate.m in Sources */,
